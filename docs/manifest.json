@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Mise en Gras Automatique",
+  "version": "1.0",
+  "description": "Mise en gras des lettres selon les règles spécifiées.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["popup.css"]
+    }
+  ],
+  "icons": {
+    "48": "icons/icon48.png"
+  },
+  "browser_action": {
+    "default_icon": "icons/icon48.png",
+    "default_title": "Mise en Gras Automatique"
+  }
+}
+
